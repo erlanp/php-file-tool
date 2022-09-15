@@ -51,7 +51,7 @@ class File_copy extends MY_Controller {
 			}
 
 			$data = array(
-				'allow_to_copy' => explode("\n", $input->post('allow_to_copy')) ?: [],
+				'allow_to_copy' => explode("\n", trim($input->post('allow_to_copy'))) ?: [],
 				'dir_from' => ($input->post('dir_from')),
 				'dir_to' => ($input->post('dir_to')),
 			);
@@ -274,7 +274,6 @@ class File_copy extends MY_Controller {
 					&& $pos !== FAlSE 
 					&& $file_data !== $r_file_data 
 					&& $pos > strlen($r_file_data)-3) {
-				// var_export([$pos, strlen($r_file_data)]);exit;
 				return 'check_blank';
 			}
 			if ($config['check_code']) {
@@ -368,8 +367,7 @@ class File_copy extends MY_Controller {
 		$if_fn = $this->get_fn();
 		$Ob->fn_filter = function($str) use($time, $if_fn) {
 			if (
-			// filemtime($str) > $time
-			true
+			filemtime($str) > $time
 			) {
 				$arr = $if_fn(file_get_contents($str));
 				if ( ! empty($arr)) {

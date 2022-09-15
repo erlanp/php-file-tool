@@ -110,8 +110,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		form_checkbox('check_code', '1', $input->get_post('check_code') !== '0'); ?>
 	</div>
 	
-	
-	
 	<div>&nbsp;</div>
 	<div>
 	

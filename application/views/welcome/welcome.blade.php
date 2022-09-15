@@ -14,7 +14,7 @@
 		</div>
 		
 		<div>
-			<a href="'/file_copy/copy'">指定文件拷贝</a>
+			<a href="/file_copy/copy">指定文件拷贝</a>
 		</div>
 		
 		<div>

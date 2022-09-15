@@ -5,6 +5,6 @@ class File extends MY_Controller {
 	public function index()
 	{
 		// 入口菜单
-		echo $this->load->blade('welcome.welcome');
+		$this->load->view('welcome/welcome');
 	}
 }

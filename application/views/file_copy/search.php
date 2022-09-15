@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <form id="mainform" name="mainform" target="iframe_file" method="post" enctype="multipart/form-data">
 
 	<div>
-	<?php echo form_label('导入文件夹:'); ?>
+	<?php echo form_label('来源文件夹:'); ?>
 	<?php echo form_input(array(
               'name'        => 'dir_from',
               'id'          => 'dir_from',

@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <form id="mainform" name="mainform" target="iframe_file" method="post" enctype="multipart/form-data">
 
 	<div>
-	<?php echo form_label('导入文件夹:'); ?>
+	<?php echo form_label('来源文件夹:'); ?>
 	<?php echo form_input(array(
               'name'        => 'dir_from',
               'id'          => 'dir_from',
@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 	
 	<div>
-	<?php echo form_label('导出文件夹:'); ?>
+	<?php echo form_label('目标文件夹:'); ?>
 	<?php echo form_input(array(
               'name'        => 'dir_to',
               'id'          => 'dir_to',
@@ -169,7 +169,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 	<div>&nbsp;</div>
 	<div>
-		导出文件夹下的内容都会被删除<input class="button" type="submit" name="ok" value=" OK "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		目标文件夹下的内容都会被删除<input class="button" type="submit" name="ok" value=" OK "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<input class="button" type="reset" value="RESET"/>
 	</div>
 	
