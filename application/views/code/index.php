@@ -99,7 +99,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					'nothing'=>'nothing', 
 					'base64'=>'base64', 
 					'json'=>'json', 
-					'hjson'=>'hjson',
+					// 'hjson'=>'hjson', // php高版本不能用
 					'json5'=>'json5',
 					'yaml'=>'yaml',
 					'json_un'=>'json允许中文',
@@ -138,7 +138,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					'nothing'=>'nothing', 
 					'base64'=>'base64', 
 					'json'=>'json',
-					'hjson'=>'hjson',
+					// 'hjson'=>'hjson', // php高版本不能用
 					'yaml'=>'yaml',
 					'yaml_level'=>'yaml两个空格',
 					'json_un'=>'json允许中文',

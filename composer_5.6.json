@@ -1,0 +1,10 @@
+{
+	"require": {
+		"yosymfony/toml": "^0.3.3",
+		"colinodell/json5": "^2.1",
+		"symfony/yaml": "^3.4",
+		"nilportugues/sql-query-formatter": "^1.2",
+		"laktak/hjson": "^2.2",
+		"jenssegers/blade": "^1.1"
+	}
+}
